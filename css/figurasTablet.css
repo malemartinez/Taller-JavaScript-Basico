@@ -1,0 +1,14 @@
+
+
+.form-container{
+    max-width: 350px;
+    border-radius: 50px;
+}
+.form-container:hover {
+    transform: scale(1.025);
+}
+
+.workshop-container{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr)
+}

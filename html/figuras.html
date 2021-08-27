@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/figuras.css">
+    <link rel="stylesheet" href="../css/figurasTablet.css" media="screen and (min-width: 650px)">
+    <link rel="stylesheet" href="../css/figurasLaptop.css" media="screen and (min-width: 780px)">
+    <title>figuras geométricas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container ">
+            <a href="#">HOME</a>
+            <h1 class="title-container">Perímetro y área de figuras geométricas</h1>
+        </div>
+    </header>
+    <div class="Flex-container">
+        <div class="form-container">
+            <h3> Cuadrado</h3>
+            <div class="fig-square img-fig"></div>
+            <form class="flex-form" action="">
+                <label for="inputCuadrado">
+                    Medida del lado (cm):
+                </label>
+                <input type="number" id="inputCuadrado" placeholder="cm">
+                <div class="container-buttom">
+                    <button type="button" onclick="CalcularPerimetroCuadrado()">
+                        Calcule perímetro
+                    </button>
+                    <button type="button" onclick="CalcularAreaCuadrado()">
+                        Calcule área
+                    </button>
+                </div>
+                
+                <p class="respuesta" id="resultPerimetroCuadrado"></p>
+                <p class="respuesta" id="resultAreaCuadrado"></p>
+            </form>
+        </div>
+        <div class="form-container">
+            <h3>Círculo</h3>
+            <div class="fig-circle img-fig"></div>
+            <form class="flex-form" action="">
+                    <label for="radioCirculo">
+                    Radio del círculo (cm):
+                    </label>
+                    <input type="number" id="radioCirculo" placeholder="cm">
+                    <div class="container-buttom">
+                        <button type="button" onclick="CalcularPerimetroCirculo()">
+                            Calcule perímetro
+                        </button>
+                        <button type="button" onclick="CalcularAreaCirculo()">
+                            Calcule área
+                        </button>
+                    </div>
+                    
+                    <p class="respuesta" id="resultPerimetroCirculo"></p>
+                    <p class="respuesta" id="resultAreaCirculo"></p>
+            </form>
+        </div>
+    
+        <div class="form-container">
+            <h3>Triangulo</h3>
+            <img class="img-fig fig-triangle" src="../assets/triangulo.png" alt="">
+            <form class="flex-form" action="">
+                <div class="flex-form--side">
+                    <div class="">
+                        <label for="inputLado1">
+                            Lado 1 (cm):
+                        </label>
+                        <input type="number" id="inputLado1" placeholder="cm">
+                    </div>
+                    <div>
+                        <label for="inputLado2">
+                            Lado 2 (cm):
+                        </label>
+                        <input type="number" id="inputLado2" placeholder="cm">
+                    </div>
+                    
+                </div>
+                
+                <label for="inputBase">
+                    Base (cm):
+                </label>
+                <input type="number" id="inputBase" placeholder="cm">
+                <div class="container-buttom">
+                    <button type="button" onclick="CalcularPerimetroTriangulo()">
+                        Calcule perímetro
+                    </button>
+                    <button type="button" onclick="CalcularAreaTriangulo()">
+                        Calcule área
+                    </button>
+                </div>
+                
+                <p class="respuesta" id="resultPerimetroTriangulo"></p>
+                <p  class="respuesta"id="resultAreaTriangulo"></p>
+        </div>
+    
+        
+    </div>
+    <footer>
+        <ul class="workshop-container">
+            <li class="workshop-item">
+                <img src="../assets/descuento.png" alt="" class="icon-workshop">
+                <a href="./porcentajes.html"> Taller <br> Porcentajes y Descuentos</a></li>
+            <li class="workshop-item">
+                <img src="https://img.icons8.com/dotty/80/000000/statistics.png" class="icon-workshop"/>
+                <a href="./PromedioYmediana.html"> Taller <br> Promedio, Mediana y Moda</a></li>
+            <li class="workshop-item">
+                <img src="https://img.icons8.com/dotty/80/000000/average-2.png" class="icon-workshop"/>
+                <a href="./analisisSalarial.html"> Taller <br> Análisis Salarial</a></li>
+        </ul>
+    </footer>
+    <script src="../js/figuras.js"></script>
+</body>
+
+</html>

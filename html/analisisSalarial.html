@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/analisisSalarial.css">
+    <link rel="stylesheet" href="../css/analisisSalarialTablet.css" media="(min-width: 660px)">
+    <link rel="stylesheet" href="../css/analisisSalarialLapto.css" media="(min-width: 800px)">
+
+    <title>Análisis Salarial</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container ">
+            <a href="#">HOME</a>
+            <h1 class="title-container">Análisis Salarial</h1>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="flex-container">
+            <img src="https://img.icons8.com/dotty/80/000000/average-2.png"/>
+
+            <div class="question-box">
+                <div class="question-container ">
+                    <label for="">¿Qué quieres calcular?</label>
+                    <select name="" id="select">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Mediana</option>
+                        <option value="2">Mediana del TOP</option>
+                    </select>
+                </div>
+                <p class="error"></p>
+
+            </div>
+        
+            <div class="addList-container">
+                <label for="">Salario a ingresar </label>
+                <input type="number" class="addList">
+                <p class="Error error"></p>
+                <button class="add-button">Agregar a la lista</button>
+            </div>
+        
+            <div class="addPorcentage">
+                <label for="">Porcentaje TOP de la lista</label>
+                <input class="percentage" type="number">
+                <p class="ErrorPercentage error"></p>
+            </div>
+        
+            <button class="button" onclick="err()">Calcular</button>
+            <p class="ErrorList error"></p>
+        </div>
+        
+        <div class="List-items-Container">Lista de Salarios
+            <ol class="List-items"></ol>
+        </div>
+    </main>
+    <section class="result-container">
+        <div class="result-box">
+            <p><span onclick="closeResultBox()"> x </span></p>
+            <img src="https://img.icons8.com/dotty/80/000000/average-2.png"/>
+            <h2 class="title" id="resultH2"></h2>
+            <h4  id="resultH4"></h4>
+            <h5 class="resultH5"></h5>
+        </div>
+    </section>
+    <footer>
+        <ul class="workshop-container">
+            <li class="workshop-item">
+                <img src="https://img.icons8.com/dotty/80/000000/top-view.png" class="icon-workshop"/>
+                <a href="./figuras.html"> Taller <br> Figuras Geométricas</a></li>
+            <li class="workshop-item">
+                <img src="../assets/descuento.png" alt="" class="icon-workshop">
+                <a href="./porcentajes.html"> Taller <br> Porcentajes y Descuentos</a></li>
+            <li class="workshop-item">
+                <img src="https://img.icons8.com/dotty/80/000000/statistics.png" class="icon-workshop"/>
+                <a href="./PromedioYmediana.html"> Taller <br> Promedio, Mediana y Moda</a></li>
+        </ul>
+    </footer>
+    <script src="../js/analisisSalarial.js"></script>
+</body>
+</html>

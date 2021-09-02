@@ -5,49 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+
+
     <title>Home</title>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="header-icons">
-                <span>icono de linkedin</span>
-                <span>iconp de github</span>
+                <a href="https://github.com/malemartinez/" target="_blank" class="icon-social">
+                    <i class="fab fa-github circulo-redes"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/malemartinez/" target="_blank" class="icon-social">
+                    <i class="fab fa-linkedin circulo-redes"></i>
+                </a>
             </div>
-            <h4 class="header-title">Mayra Alejandra Martínez Sánchez</h4>
         </div>
     </header>
     <main>
-        <div class="main-container">
+        <div class="circle-background one-circle"></div>
+        <div class="circle-background two-circle"></div>
+        <section class="main-container">
+
             <div class="main-container-info">
-                <img src="" alt="">
-                <div class="main-container-info-Learned">LOGOS de los conocimientos adquiridos
-                    Manipulacion del DOM
-                    Metodos de arrays
-                    Javascript básico
-                    POO básico
-                    HTML
-                    CSS
+                
+                <div class="main-container-info-Learned">
+                    <h2 class="info-title__h2">Hola, soy</h2>
+                    <h1 class="info-title__h1">Alejandra</h1>
+                    <p class="info-text">Acá te presento los conocimientos adquiridos mediante las prácticas de JavaScript básico en la linda Platzi.</p>
+                    <ul class="info-icons">
+                        <li> <img src="./assets/javascript.png" alt=""></li>
+                        <li> <img src="./assets/DOM.png" alt=""></li>
+                        <li> <img src="./assets/POO.png" alt=""></li>
+                        <li> <img src="./assets/css.png" alt=""> </li>
+                        <li> <img src="./assets/html.png" alt=""> </li>
+                    </ul>
+                    
                 </div>
+                <figure>
+                    <img class="main-container-img" src="./assets/foto perfil2.png" alt="">
+                </figure>
             </div>
-            <div class="main-container-listProjects">aqui va la lista con los 4 proyectos
-                <ul>
-                    <li class="listProject-item"> <span>imagen</span><a href="./html/figuras.html">Figuras Geométricas
-                        <p>Esta es una calculadora de perimetro y area de algunas figuras geométricas</p></a> 
+            <div class="main-container-listProjects">
+                <p class="listProjects-text">Echale un vistazo a mis talleres...</p>
+                <ul class="listProjects-container">
+                    <li class="listProject-item" > 
+                        <span class="listProject-item-img figure-icon"  alt=""></span>
+                        <a href="./html/figuras.html" target="_blank" class="listProject-item-text">Figuras Geométricas</a> 
                     </li>
-                    <li class="listProject-item"><a href="./html/porcentajes.html">Porcentajes y Descuentos 
-                        <p>Cálculo de precios con descuentos</p></a> </li>
-                    <li class="listProject-item"><a href="./html/PromedioYmediana.html">Promedio, Mediana y Moda
-                        <p>Cálculo de variables estadísticas</p></a></li>
-                    <li class="listProject-item"><a href="./html/analisisSalarial.html">Análisis Salarial
-                        <p>Calculo de medianas en una lista de salarios</p></a></li>
+                    <li class="listProject-item">
+                        <span class="listProject-item-img discount-icon"  alt=""></span>
+                        <a href="./html/porcentajes.html" target="_blank" class="listProject-item-text">Precios y Descuentos </a>
+                         </li>
+                    <li class="listProject-item">
+                        <span class="listProject-item-img average-icon"  alt=""></span>
+                        <a href="./html/PromedioYmediana.html"target="_blank" class="listProject-item-text">Promedio, Mediana y Moda</a>
+                    </li>
+                    <li class="listProject-item">
+                        <span class="listProject-item-img analysis-icon"  alt=""></span>
+                        <a href="./html/analisisSalarial.html" target="_blank" class="listProject-item-text">Análisis <br> Salarial</a>
+                    </li>
                 </ul>
             </div>
-        </div>
+            
+        </section>
     </main>
-    <footer>
-        <div>Hecho con amor por Aleja Martinez</div>
-        <div>REdes sociales</div>
-    </footer>
+    
 </body>
 </html>

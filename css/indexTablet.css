@@ -1,0 +1,19 @@
+.main-container-info{
+    justify-content: space-evenly;
+}
+.main-container-info-Learned{
+    align-items: center;
+    order: 2;
+}
+.main-container-img{
+    order: 1;
+}
+.info-text{
+    text-align: center;
+}
+.info-icons{
+    justify-content: space-evenly;
+}
+.listProjects-text{
+    text-align: center;
+}

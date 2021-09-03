@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/indexTablet.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" href="./css/indexMobile.css" media="screen and (max-width:530px)">
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
-
 
     <title>Home</title>
 </head>
@@ -28,12 +29,8 @@
         </div>
     </header>
     <main>
-        <div class="circle-background one-circle"></div>
-        <div class="circle-background two-circle"></div>
         <section class="main-container">
-
             <div class="main-container-info">
-                
                 <div class="main-container-info-Learned">
                     <h2 class="info-title__h2">Hola, soy</h2>
                     <h1 class="info-title__h1">Alejandra</h1>
@@ -50,12 +47,10 @@
                         <li> <img src="./assets/css.png" alt=""> </li>
                         <li> <img src="./assets/html.png" alt=""> </li>
                     </ul>
-
                 </div>
-                
             </div>
             <div class="main-container-listProjects">
-                <p class="listProjects-text">Echale un vistazo a mis talleres...</p>
+                <p class="listProjects-text">Échale un vistazo a mis talleres...</p>
                 <ul class="listProjects-container">
                     <li class="listProject-item" > 
                         <span class="listProject-item-img figure-icon"  alt=""></span>
@@ -75,9 +70,12 @@
                     </li>
                 </ul>
             </div>
-            
+        </section>
+        <section class="menu-button-container">
+            <button class="menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
         </section>
     </main>
-    
 </body>
 </html>

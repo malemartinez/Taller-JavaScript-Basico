@@ -1,34 +1,25 @@
-.header-container a{
-    position: absolute;
+.Home-container a{
     display: block;
-    top: 20px;
-    left: 30px;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 50px;
     color: black;
     font-size: 1.7rem;
     font-weight: bold;
-    border-radius: 50px;
-    background-color:rgba(255, 255, 255, 0.705);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+    transition: transform 0.5s;
+    border-radius: 20px;
 }
-.header-container a:hover{
+.Home-container a:hover{
+    background-color:var(--primary-color);
     transform: scale(1.1);
+    color: var(--ligth-color);
 }
-.form-section{
-    margin-bottom: 100px;
-    padding-bottom: 40px;
-}
+
 .form-container{
     width: 400px;
     border-radius: 50px;
 }
-footer{
-    position: fixed; 
-    bottom: 0;
-}
+
 .workshop-container{
     display: grid;
     grid-template-columns: repeat( 3, 1fr);
-    background-color: rgba(255, 255, 255, 0.932);
 }

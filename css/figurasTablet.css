@@ -1,13 +1,12 @@
-
-
 .form-container{
     max-width: 350px;
     border-radius: 50px;
+    background-color:rgba(255, 255, 255, 0.705); 
+    box-shadow: 5px 5px 15px var(--neutral-color);
 }
 .form-container:hover {
     transform: scale(1.025);
 }
-
 .workshop-container{
     display: grid;
     grid-template-columns: repeat( 3, 1fr)

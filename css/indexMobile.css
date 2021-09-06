@@ -15,25 +15,108 @@
 }
 
 @media screen and (max-width: 430px) {
+    header{
+        order: 2;
+        background-color: var(--ligth-color);
+        padding: 20px 0px;
+    }
+    .header{
+        justify-content: center;
+    }
+    main{
+        order: 1;
+    }
     .main-container-listProjects{
         flex-basis: 0px;
     }
     .listProjects-container{
         display: none;
     }
+    
     .menu-button-container{
         display: flex;
         justify-content: center;
     }
     .menu-button{
-        font-size: 50px;
+        font-size: 30px;
         border-radius: 50%;
         padding: 20px;
         color: var(--ligth-color);
         background-color: var(--primary-color);
-        border: none;
+        border:  var(--dark-color) 1px solid;
      }
     .menu-button:hover{
          cursor: pointer;
-     }
+        background-color: var(--ligth-color);
+        color: var(--dark-color);
+    }
+    .menu-responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        left: 0px;
+        
+        width: 100%;
+        height:calc(100% - 25%);
+        padding: 50px;
+        border-radius: 50px;
+        box-shadow: -10px 0px 20px var(--neutral-color);
+        background-color: var(--ligth-color);
+        transition: top 0.5s ease-in-out;
+        overflow-y: auto;
+    }
+    .arrow-back-button{
+        font-size: 20px;
+        padding: 10px;
+        margin: 0 auto;
+        color: var(--ligth-color);
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        border:  var(--dark-color) 1px solid;
+    }
+    .arrow-back-button:hover{
+        cursor: pointer;
+        background-color: var(--ligth-color);
+        color: var(--dark-color);  
+    }
+    .menu-list-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+    .menu-list-container li{
+        display: flex;
+        align-items:center;
+        width: 100%;
+        padding: 20px 10px;
+        font-family: var(--font-family-principal);
+        border-bottom: 2px solid var(--secundary-color);
+    }
+    .menu-list-container li:hover .menu-item{
+        color: var(--primary-color);
+    }
+    .menu-item{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .icon-menu{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* controlar aparicion de menu */
+    .menu-visible{
+        top: 30%;
+    }
+    .menu-oculto{
+        top: 110%;
+    }
 }

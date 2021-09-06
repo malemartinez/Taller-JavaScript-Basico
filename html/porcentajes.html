@@ -4,33 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/porcentajes.css">
     <link rel="stylesheet" href="../css/porcentajesTablet.css" media="(min-width: 700px)">
+        <!-- fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+    
     <title>Porcentajes y descuentos</title>
 </head>
 <body>
-    <header>
-        <div class="header-container ">
-            <a href="#">HOME</a>
-            <h1 class="title-container">Porcentajes y descuentos </h1>
+    <header class="header">
+        <div class="Home-container">
+            <a href="../index.html" target="__blank">HOME</a>
         </div>
-
+        <div class="header-icons">
+            <a href="https://github.com/malemartinez/" target="_blank" class="icon-social">
+                <i class="fab fa-github circulo-redes"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/malemartinez/" target="_blank" class="icon-social">
+                <i class="fab fa-linkedin circulo-redes"></i>
+            </a>
+        </div>
     </header>
-    <section class="form-section">
-        <form action="" class="form-container">
-            <span class="img-container"></span>
-            <h2 class="form-title">Calcula el precio de tus productos con descuentos</h2>
-            <label for="precioOriginal">Escribe el precio </label>
-            <input placeholder="10000" type="number" id = "precioOriginal">
-            <label for="descuento">Escribe el descuento</label>
-            <input placeholder="30" type="number" id="descuento">
-            
-            <button class="form-button" type="button" onclick="calcularPrecioDescuento()">
-                Calcular precio final
-            </button>
-            <textarea class="result-container" id="resultado"></textarea>
-        </form>
-    </section>
+    <main>
+
+        <h1 class="title-container">Porcentajes y descuentos </h1>
+        <section class="form-section">
+            <form action="" class="form-container">
+                <span class="img-container"></span>
+                <h2 class="form-title">Calcula el precio de tus productos con descuentos</h2>
+                <label for="precioOriginal">Escribe el precio </label>
+                <input placeholder="10000" type="number" id = "precioOriginal">
+                <label for="descuento">Escribe el descuento</label>
+                <input placeholder="30" type="number" id="descuento">
+                
+                <button class="form-button" type="button" onclick="calcularPrecioDescuento()">
+                    Calcular precio final
+                </button>
+                <textarea class="result-container" id="resultado"></textarea>
+            </form>
+        </section>
+    </main>
     <footer>
         <ul class="workshop-container">
             <li class="workshop-item">
